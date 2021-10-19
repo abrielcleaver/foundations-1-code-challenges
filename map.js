@@ -19,7 +19,12 @@ Output:
 */
 
 export function makeArrayOfNamesWithMap(arr) {
-    return [];
+    const names = arr.map(pets => {
+        pets.names = true;
+       // console.log(pets.name);
+        return pets.name
+    });
+    return names;
 }
 
 /*
