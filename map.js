@@ -42,7 +42,7 @@ export function makeArrayWithIsHungry(arr) {
         ...pets, isHungry: true
        
     }));
-    
+
 }
 
 /*
@@ -56,9 +56,13 @@ Output:
 ]*/
 
 export function makeShoutingArray(arr) {
-    return [];
+    return arr.map( object => {
+        return {
+            name: object.name.toUpperCase(),
+            type: object.type,
+        };
+    });
 }
-
 
 /*
 
@@ -67,8 +71,10 @@ Output:
 */
 
 export function makeStringArray(arr) {
-    return [];
-}
+   return arr.map(object => object.name + object.type)
+    }
+   
+
 
 /*
 Output:
