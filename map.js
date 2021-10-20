@@ -62,7 +62,7 @@ export function makeShoutingArray(arr) {
             type: object.type,
         };
     });
-}
+};
 
 /*
 
@@ -99,5 +99,6 @@ Output:
 */
 
 export function makeArrayOfArraysOfArrays(arr) {
-    return [];
+    return arr.map(object => [['name', object.name] , ['type', object.type]]
+    )
 }
