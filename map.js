@@ -101,4 +101,4 @@ Output:
 export function makeArrayOfArraysOfArrays(arr) {
     return arr.map(object => [['name', object.name] , ['type', object.type]]
     )
-}
+};
